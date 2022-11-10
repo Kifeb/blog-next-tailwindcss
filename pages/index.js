@@ -4,6 +4,7 @@ import { useState } from "react"
 import mockPost from "../utils/posts.json"
 import Container from "@components/Container"
 import Layout from "@components/Layout"
+import Head from "next/head"
 
 export default function Home() {
 
@@ -11,6 +12,9 @@ export default function Home() {
 
   return (
     <Layout>
+      <Head>
+        <title>My Blog Epicetus</title>
+      </Head>
       <Container>
         <FeaturedPost />
         <div className="flex -mx-4 flex-wrap">
